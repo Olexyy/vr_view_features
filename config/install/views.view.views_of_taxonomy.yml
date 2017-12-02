@@ -173,7 +173,7 @@ display:
           entity_field: is_starting
           plugin_id: boolean
       sorts: {  }
-      title: 'Views of Taxonomy'
+      title: 'Vr views list'
       header: {  }
       footer: {  }
       empty: {  }
