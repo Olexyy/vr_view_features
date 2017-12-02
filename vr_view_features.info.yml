@@ -1,0 +1,14 @@
+name: 'VR View Features'
+description: 'VR View Features'
+type: module
+core: 8.x
+dependencies:
+  - block
+  - image
+  - node
+  - system
+  - taxonomy
+  - user
+  - views
+  - vr_view
+version: 8.x-1.0
