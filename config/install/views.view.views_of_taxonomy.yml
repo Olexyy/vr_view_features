@@ -262,10 +262,10 @@ display:
         - url
         - url.query_args
       tags: {  }
-  block_1:
+  block_vr_views_by_type_helper:
     display_plugin: block
-    id: block_1
-    display_title: Block
+    id: block_vr_views_by_type_helper
+    display_title: 'VR Views by type helper'
     position: 2
     display_options:
       display_extenders: {  }
@@ -609,6 +609,7 @@ display:
           entity_type: vr_view
           entity_field: type
           plugin_id: numeric
+      display_description: 'Helper list of VR Views by Type'
     cache_metadata:
       max-age: -1
       contexts:
@@ -617,10 +618,10 @@ display:
         - url
         - url.query_args
       tags: {  }
-  page_1:
+  page_vr_view_details:
     display_plugin: page
-    id: page_1
-    display_title: Page
+    id: page_vr_view_details
+    display_title: 'VR View Details'
     position: 1
     display_options:
       display_extenders: {  }
@@ -692,6 +693,7 @@ display:
             value: ''
             format: basic_html
           plugin_id: text
+      display_description: 'VR View Details'
     cache_metadata:
       max-age: -1
       contexts:
@@ -699,10 +701,10 @@ display:
         - 'languages:language_interface'
         - url
       tags: {  }
-  page_2:
+  page_vr_views_by_type:
     display_plugin: page
-    id: page_2
-    display_title: Page
+    id: page_vr_views_by_type
+    display_title: 'VR Views by type'
     position: 1
     display_options:
       display_extenders: {  }
@@ -1105,6 +1107,7 @@ display:
       row:
         type: fields
         options: {  }
+      display_description: 'VR Views by type'
     cache_metadata:
       max-age: -1
       contexts:
