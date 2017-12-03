@@ -4,5 +4,5 @@ dependencies: {  }
 name: 'VR Views types'
 vid: vr_views_types
 description: 'Types for vr views.'
-hierarchy: 0
+hierarchy: 1
 weight: 0
