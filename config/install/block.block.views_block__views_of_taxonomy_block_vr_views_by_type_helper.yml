@@ -1,0 +1,30 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.views_of_taxonomy
+  module:
+    - system
+    - views
+  theme:
+    - bootstrap
+id: views_block__views_of_taxonomy_block_vr_views_by_type_helper
+theme: bootstrap
+region: content
+weight: 0
+provider: null
+plugin: 'views_block:views_of_taxonomy-block_vr_views_by_type_helper'
+settings:
+  id: 'views_block:views_of_taxonomy-block_vr_views_by_type_helper'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+  items_per_page: none
+  context_mapping: {  }
+visibility:
+  request_path:
+    id: request_path
+    pages: '/vr-views/*'
+    negate: false
+    context_mapping: {  }
