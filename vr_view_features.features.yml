@@ -1,1 +1,3 @@
+excluded:
+  - node.type.article
 required: true

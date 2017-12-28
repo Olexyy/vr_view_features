@@ -4,10 +4,21 @@ type: module
 core: 8.x
 dependencies:
   - block
+  - comment
+  - field
+  - field_layout
+  - file
   - image
+  - layout_discovery
   - node
+  - options
+  - page_manager
+  - panelizer
+  - path
+  - rdf
   - system
   - taxonomy
+  - text
   - user
   - views
   - vr_view

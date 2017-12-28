@@ -2,7 +2,7 @@ langcode: en
 status: true
 dependencies:
   config:
-    - core.entity_view_mode.node.full
+    - core.entity_view_mode.node.custom
     - core.entity_view_mode.node.rss
   module:
     - node
@@ -177,7 +177,7 @@ display:
         type: 'entity:node'
         options:
           relationship: none
-          view_mode: full
+          view_mode: custom
       sorts:
         sticky:
           admin_label: ''
@@ -211,9 +211,8 @@ display:
       style:
         type: default
         options:
-          grouping: {  }
           row_class: ''
-          default_row_class: true
+          default_row_class: false
           uses_fields: false
       title: ''
       header: {  }

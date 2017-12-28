@@ -1,7 +1,8 @@
 langcode: en
-status: true
+status: false
 dependencies:
   config:
+    - core.entity_view_mode.node.full
     - field.field.node.page.body
     - field.field.node.page.field_text_list
     - field.field.node.page.panelizer
@@ -9,7 +10,6 @@ dependencies:
   module:
     - field_layout
     - layout_discovery
-    - options
     - panelizer
     - text
     - user
@@ -22,7 +22,7 @@ third_party_settings:
     displays:
       default:
         blocks:
-          b0dc090c-09f7-4795-806d-9076b1be7fcb:
+          2073e3fc-3ee9-4345-b6fb-b8fc4bc2d1c8:
             id: 'entity_field:node:uid'
             label: 'Authored by'
             provider: ctools_block
@@ -34,12 +34,12 @@ third_party_settings:
               third_party_settings: {  }
               weight: 0
               region: content
-            region: main
-            weight: 1
             context_mapping:
               entity: '@panelizer.entity_context:entity'
-            uuid: b0dc090c-09f7-4795-806d-9076b1be7fcb
-          d15deecd-5c70-404d-9a67-95424cb462b1:
+            region: content
+            weight: 0
+            uuid: 2073e3fc-3ee9-4345-b6fb-b8fc4bc2d1c8
+          4436095f-82be-4d5d-81a0-de2704e49256:
             id: 'entity_field:node:created'
             label: 'Authored on'
             provider: ctools_block
@@ -54,12 +54,12 @@ third_party_settings:
               third_party_settings: {  }
               weight: 0
               region: content
-            region: main
-            weight: 2
             context_mapping:
               entity: '@panelizer.entity_context:entity'
-            uuid: d15deecd-5c70-404d-9a67-95424cb462b1
-          2a0c72ab-7d21-4c5c-8894-452fb6c81f42:
+            region: content
+            weight: 0
+            uuid: 4436095f-82be-4d5d-81a0-de2704e49256
+          a0d159d1-a190-4ca8-83d2-a5f97f266b0c:
             id: 'entity_field:node:body'
             label: Body
             provider: ctools_block
@@ -71,46 +71,29 @@ third_party_settings:
               third_party_settings: {  }
               weight: 0
               region: content
-            region: main
-            weight: -1
             context_mapping:
               entity: '@panelizer.entity_context:entity'
-            uuid: 2a0c72ab-7d21-4c5c-8894-452fb6c81f42
-          8d965ce1-8e70-44d6-a811-57d4932a3c9b:
-            id: 'entity_field:node:field_text_list'
-            label: 'Text list'
-            provider: ctools_block
-            label_display: '0'
-            formatter:
-              label: hidden
-              type: list_default
-              settings: {  }
-              third_party_settings: {  }
-              weight: 0
-            region: main
-            weight: 0
-            uuid: 8d965ce1-8e70-44d6-a811-57d4932a3c9b
-            context_mapping:
-              entity: '@panelizer.entity_context:entity'
+            region: content
+            weight: 100
+            uuid: a0d159d1-a190-4ca8-83d2-a5f97f266b0c
         id: panels_variant
         label: Default
-        uuid: 25c26abf-3046-46fc-a618-94be41ab0c77
+        uuid: d4950a3c-60cf-453d-8c55-624015f9420c
         weight: 0
-        layout: bs_1col
+        layout: layout_onecol
         layout_settings: {  }
         page_title: '[node:title]'
-        storage_type: panelizer_default
-        storage_id: 'node:page:default:default'
+        storage_type: ''
+        storage_id: ''
         builder: ipe
         pattern: panelizer
-        static_context: {  }
   field_layout:
     id: layout_onecol
     settings: {  }
-id: node.page.default
+id: node.page.full
 targetEntityType: node
 bundle: page
-mode: default
+mode: full
 content:
   body:
     label: hidden
@@ -119,17 +102,11 @@ content:
     region: content
     settings: {  }
     third_party_settings: {  }
-  field_text_list:
-    weight: 102
-    label: above
-    settings: {  }
-    third_party_settings: {  }
-    type: list_default
-    region: content
   links:
     weight: 101
     region: content
     settings: {  }
     third_party_settings: {  }
 hidden:
+  field_text_list: true
   panelizer: true
